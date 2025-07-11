@@ -114,48 +114,60 @@
     </p>
     <p align="justify">
 	    <i><b></b></i>
+<style>
+  .committee-row{
+      display:flex;               /* one horizontal row */
+      justify-content:center;     /* centered as a group */
+      gap:40px;                   /* space between photos */
+      flex-wrap:wrap;             /* wrap on small screens if needed */
+  }
+  .committee-row figure{
+      margin:0;
+      text-align:center;          /* name (and school) under the photo */
+  }
+  .committee-row img{
+      width:165px;
+      height:190px;
+      display:block;              /* removes inline space below image */
+  }
+  .affiliation{
+      font-size:0.9em;            /* a little smaller than the name */
+      font-style:italic;
+  }
+</style>
 
-	<style>
-	  .committee-row{
-	      display:flex;               /* one horizontal row */
-	      justify-content:center;     /* centered as a group */
-	      gap:40px;                   /* space between photos */
-	      flex-wrap:wrap;             /* optional: wrap on small screens */
-	  }
-	  .committee-row figure{
-	      margin:0;
-	      text-align:center;          /* name under the photo */
-	  }
-	  .committee-row img{
-	      width:165px;
-	      height:190px;
-	      display:block;              /* removes inline-space below image */
-	  }
-	</style>
-	
-	<h2>Organizing Committee</h2>
-	<div class="committee-row">
-	  <figure>
-	    <img src="assets/junhua-ding.jpg" alt="Junhua Ding">
-	    <figcaption><b>Junhua Ding</b></figcaption>
-	  </figure>
-	
-	  <figure>
-	    <img src="assets/chen.png" alt="Haihua Chen">
-	    <figcaption><b>Haihua Chen</b></figcaption>
-	  </figure>
-	
-	  <figure>
-	    <img src="assets/Yang Zhang.jpg" alt="Yang Zhang">
-	    <figcaption><b>Yang Zhang</b></figcaption>
-	  </figure>
-	</div>
-	
-	<h2>Web Chair</h2>
-	<figure style="text-align:center;">
-	  <img src="assets/haoxuan.png" alt="Haoxuan Zhang" width="165" height="190">
-	  <figcaption><b>Haoxuan Zhang</b></figcaption>
-	</figure>
+<h2>Organizing Committee</h2>
+<div class="committee-row">
+  <figure>
+    <img src="assets/junhua-ding.jpg" alt="Junhua Ding">
+    <figcaption>
+      <b>Junhua Ding</b><br>
+      <span class="affiliation">University&nbsp;of&nbsp;North&nbsp;Texas</span>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="assets/chen.png" alt="Haihua Chen">
+    <figcaption>
+      <b>Haihua Chen</b><br>
+      <span class="affiliation">University&nbsp;of&nbsp;North&nbsp;Texas</span>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="assets/Yang Zhang.jpg" alt="Yang Zhang">
+    <figcaption>
+      <b>Yang Zhang</b><br>
+      <span class="affiliation">University&nbsp;of&nbsp;North&nbsp;Texas</span>
+    </figcaption>
+  </figure>
+</div>
+
+<h2>Web Chair</h2>
+<figure style="text-align:center;">
+  <img src="assets/haoxuan.png" alt="Haoxuan Zhang" width="165" height="190">
+  <figcaption><b>Haoxuan Zhang</b></figcaption>
+</figure>
 
 
 <h2>Program Committee</h2>
