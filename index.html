@@ -116,22 +116,28 @@
 	    <i><b></b></i>
 <style>
   .committee-row{
-      display:flex;               /* one horizontal row */
-      justify-content:center;     /* centered as a group */
-      gap:40px;                   /* space between photos */
-      flex-wrap:wrap;             /* wrap on small screens if needed */
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      flex-wrap:wrap;
   }
+
+  /* NEW / changed lines are commented */
   .committee-row figure{
       margin:0;
-      text-align:center;          /* name (and school) under the photo */
+      width:165px;          /* NEW: same width as the photo   */
+      text-align:center;    /* caption lines centred           */
   }
+
   .committee-row img{
       width:165px;
       height:190px;
-      display:block;              /* removes inline space below image */
+      display:block;
+      margin:0 auto;        /* NEW: centres the photo itself   */
   }
+
   .affiliation{
-      font-size:0.9em;            /* a little smaller than the name */
+      font-size:0.9em;
       font-style:italic;
   }
 </style>
