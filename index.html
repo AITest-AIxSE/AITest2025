@@ -22,45 +22,37 @@
 </script>
 
 <style>
-  /* ‑----––  Header bar with left + center logos  –------ */
-  .header-grid{
-      display:grid;                 /* three-cell grid  */
-      grid-template-columns:auto 1fr auto;
-      align-items:center;           /* vertical centering */
-      margin-bottom:16px;           /* space below logos */
+  .logo-bar{
+      text-align:center;      /* keeps the whole bar centred in the page */
   }
-  /* optional: tweak widths to taste */
-  .logo-ieee{width:140px;height:auto;justify-self:start;}
-  .logo-aixse{width:165px;height:92px;justify-self:center;display:block;}
+  .logo-bar .logos{
+      display:inline-flex;     /* two logos on one horizontal line   */
+      align-items:center;      /* vertical alignment                 */
+      gap:24px;                /* space between the two images       */
+  }
+  .logo-bar img{
+      width:165px;             /* keep the same visual size          */
+      height:92px;             /* adjust if your source file differs */
+  }
 </style>
 
 <body>
-
-  <!-- 2) Logo row -->
-  <div class="header-grid">
-      <!-- IEEE on the far left -->
-      <img src="assets/logo-ieee.jpg"
-           alt="IEEE logo"
-           class="logo-ieee">
-
-      <!-- AIxSE pinned in the visual center -->
-      <img src="assets/logo-aixse.png"
-           alt="AIxSE logo"
-           class="logo-aixse">
-
-      <!-- right cell left empty to keep three-column balance -->
+  <!-- 2) Two–logo bar -->
+  <div class="logo-bar">
+    <span class="logos">
+      <img src="assets/logo-ieee.jng"  alt="IEEE logo">
+      <img src="assets/logo-aixse.png" alt="AIxSE logo">
+    </span>
   </div>
 
-  <!-- 3) Workshop title -->
+  <!-- 3) The title and event details remain unchanged -->
   <p style="font-size:28px;text-align:center;line-height:1.5;" class="title2">
-      Integrated Approaches to Testing Data-Centric AI Systems: Methods, Metrics, and Benchmarks​
+    Integrated Approaches to Testing Data-Centric AI Systems:<br>
+    Methods, Metrics, and Benchmarks
   </p>
 
-  <!-- 4) Venue & dates (right-aligned) -->
-  <div style="text-align:right;">
-      The Hills Hotel, Laguna Hills, California <br>
-      October&nbsp;1-3,&nbsp;2025
-  </div>
+  <div align="right">The Hills Hotel, Laguna Hills, California</div>
+  <div align="right">October&nbsp;1-3,&nbsp;2025</div>
 
 	
     <table class="navigation">
